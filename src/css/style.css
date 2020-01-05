@@ -4,19 +4,21 @@
 
 header {
     position: relative;
+    height: 50px; 
 }
-
 nav {
+    position: fixed; 
+    width: 100%; 
     height: 50px;
     background-color: #212121;
+    z-index: 2; 
 }
-
 .menu {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     padding: 13px 70px;
-    margin: 0; 
-    list-style-type: none; 
+    margin: 0;
+    list-style-type: none;
 }
 
 .menu .menu_link {
@@ -27,18 +29,20 @@ nav {
 
 .menu .menu_item {
     border-right: 2px dotted black;
-    padding-right: 26px;
+    padding-right: 28px;
 }
 
 .subheader {
-    position: absolute; 
-    width: 100%; 
+    position: absolute;
+    top: 50px; 
+    width: 100%;
     height: 84px;
-    background-color: rgba(0,0,0, .6); 
+    background-color: rgba(0,0,0, .6);
 }
+
 .subheader .subheader_logo {
-    display: block; 
-    min-width: 100%; 
+    display: block;
+    max-width: 100%;
     margin-top: 16px;
 }
 
@@ -86,10 +90,9 @@ nav {
 
 .promo {
     min-height: 800px;
-    background: url(../img/promo_bg.jpg) center center/cover no-repeat;
+    background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
     padding: 150px 0 135px 0;
 }
-
 .promo .promo_header {
     color: #ffffff;
     font-weight: 700;
@@ -99,8 +102,7 @@ nav {
     margin: 0;
     text-align: center;
 }
-
-.promo .promo_subheader {
+.promo .promo_subheader  {
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
@@ -112,12 +114,12 @@ nav {
 }
 
 .promo .promo_descr {
-    margin-top: 23px;
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 24px;
     text-align: center;
+    margin-top: 23px;
 }
 
 .promo .promo_btn {
@@ -196,6 +198,4 @@ nav {
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
-    text-align: justify;
 }
-
